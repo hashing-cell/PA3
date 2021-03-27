@@ -43,13 +43,9 @@ SQtree & SQtree::operator=(const SQtree & rhs) {
  * SQtree constructor given tolerance for variance.
  */
 SQtree::SQtree(PNG & imIn, double tol) {
-
-  stats *s = new stats(imIn); 
-
-  pair<int, int> upper_left = make_pair(0, 0);
-
-  root = buildTree(*s, upper_left, imIn.width(), imIn.width(), tol);
-  
+  stats s = stats(imIn); 
+  pair<int ,int> first_coord = make_pair(0 ,0);
+  root = buildTree(s, first_coord, imIn.width(), imIn.height(), tol);
 }
 
 /**

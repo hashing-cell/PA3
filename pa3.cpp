@@ -31,7 +31,7 @@ int main() {
   SQtree t(orig,10.0);
 
   // copy the tree (to show you can)
-  SQtree tCopy(t);
+  //SQtree tCopy(t);
 
   // render the sqtree
   PNG pic = t.render();

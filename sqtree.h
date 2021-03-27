@@ -191,7 +191,7 @@ class SQtree {
 
   int calc_size(Node* &root);
 
-  void renderHelper(Node * treeNode, PNG & img);
+  void renderHelper(Node * node, PNG & im);
 
 
 
