@@ -187,11 +187,11 @@ class SQtree {
 
   void clearAll(Node * & node);
 
-  void copyAll(const SQtree & other, Node * & currNode);
+  SQtree::Node * copyAll(Node * node);
 
-  int calc_size(SQtree:: Node* root);
+  int calc_size(Node* &root);
 
-  void render_recursive(Node *node, PNG &im);
+  void renderHelper(Node * treeNode, PNG & img);
 
 
 
